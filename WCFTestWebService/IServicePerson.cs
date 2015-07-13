@@ -9,7 +9,9 @@ using System.Text;
 
 namespace WCFTestWebService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the interface name "IService1" in both code and config file together.
+    /// <summary>
+    /// Webservice Interface for person operations
+    /// </summary>
     [ServiceContract]
     public interface IServicePerson
     {

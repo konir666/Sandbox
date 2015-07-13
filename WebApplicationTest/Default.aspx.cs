@@ -23,6 +23,9 @@ namespace WebApplicationTest
             
         }
 
+        /// <summary>
+        /// Webservice Call to math service
+        /// </summary>
         private void calculateResult() 
         {
             try
@@ -38,6 +41,11 @@ namespace WebApplicationTest
             
         }
 
+        /// <summary>
+        /// Convertes a string value to int
+        /// </summary>
+        /// <param name="value">string to convert</param>
+        /// <returns>the converted int value</returns>
         private int getIntValue(string value)
         {
             try
@@ -49,11 +57,21 @@ namespace WebApplicationTest
             }
         }
 
+        /// <summary>
+        /// button click event for calculation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void buttonCalculate_Click(object sender, EventArgs e)
         {
             calculateResult();
         }
 
+        /// <summary>
+        /// Button person insert event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void ButtonNameInsert_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(NameTextBox.Text) && !string.IsNullOrEmpty(FirstNameTextBox.Text))
@@ -64,6 +82,11 @@ namespace WebApplicationTest
             FillNameList();
         }
 
+        /// <summary>
+        /// Button person delete event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void ButtonNameRemove_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(NameTextBox.Text) && !string.IsNullOrEmpty(FirstNameTextBox.Text))
@@ -75,6 +98,9 @@ namespace WebApplicationTest
             
         }
 
+        /// <summary>
+        /// Calls Webservice to get the entire list of person
+        /// </summary>
         private void FillNameList() {
             NameListBox.Items.Clear();
             IList<Person> personList = personClient.GetPersonList();

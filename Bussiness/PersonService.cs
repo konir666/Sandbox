@@ -8,10 +8,16 @@ using System.Threading.Tasks;
 
 namespace Business
 {
+    /// <summary>
+    /// Business Logic for Person operations
+    /// </summary>
     public class PersonService
-    {
-        
+    {        
 
+        /// <summary>
+        /// Read all persons from the Textfile
+        /// </summary>
+        /// <returns>Person object List, with all persons</returns>
         public IList<Person> ReadAllPersons()
         {
             string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -39,6 +45,10 @@ namespace Business
             return personList;
         }
 
+        /// <summary>
+        /// Saves a person object to the textfile
+        /// </summary>
+        /// <param name="person">Person to save</param>
         public void Save(Person person)
         {
             string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
@@ -56,6 +66,10 @@ namespace Business
             }
         }
 
+        /// <summary>
+        /// deletes a person from the textfile
+        /// </summary>
+        /// <param name="person">person to delete</param>
         public void deletePerson(Person person)
         {
             string mydocpath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
