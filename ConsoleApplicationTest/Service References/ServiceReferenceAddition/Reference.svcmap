@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="459de2bc-8ab1-4ff6-97c6-35ab81eec453" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:63108/ServiceAddition.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceAddition.xsd" MetadataType="Schema" ID="bb129871-bd85-4d04-914f-5d09e902e550" SourceId="1" SourceUrl="http://localhost:63108/ServiceAddition.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceAddition3.xsd" MetadataType="Schema" ID="1e3d9b9b-114d-401a-8ef1-b101cacd8a82" SourceId="1" SourceUrl="http://localhost:63108/ServiceAddition.svc?xsd=xsd3" />
+    <MetadataFile FileName="ServiceAddition2.xsd" MetadataType="Schema" ID="75cd01a1-0803-4218-a85f-bd5c4d4ecfab" SourceId="1" SourceUrl="http://localhost:63108/ServiceAddition.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceAddition1.xsd" MetadataType="Schema" ID="9556b119-1ab1-4ec6-8993-06ae44c1d222" SourceId="1" SourceUrl="http://localhost:63108/ServiceAddition.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceAddition.wsdl" MetadataType="Wsdl" ID="cb2a917b-e876-4419-b011-ffba607f61fe" SourceId="1" SourceUrl="http://localhost:63108/ServiceAddition.svc?wsdl" />
+    <MetadataFile FileName="ServiceAddition.disco" MetadataType="Disco" ID="8fa89bd9-320d-442d-9de7-712352b5d561" SourceId="1" SourceUrl="http://localhost:63108/ServiceAddition.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
